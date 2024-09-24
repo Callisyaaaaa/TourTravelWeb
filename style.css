@@ -9,3 +9,40 @@ body {
     background-attachment: fixed;
     height: 100vh; 
 }
+.get-started-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    background-image: url('images/hill.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    text-align: center;
+}
+
+
+.get-started-container h1 {
+    font-family: 'Georgia', serif;
+    font-size: 48px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff; 
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
+
+.start-button {
+    padding: 15px 30px;
+    font-size: 20px;
+    color: #fff;
+    background-color: #506551;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.start-button:hover {
+    background-color: #45a049;
+}
