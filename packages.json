@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "name": "Bali December Tour",
+        "description": "12 December - 17 December 2026",
+        "price": 8500000,
+        "duration": "5 Days 4 Nights",
+        "image" : "images/bali.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Beijing Summer Tour",
+        "description": "14 April - 22 April 2025",
+        "price": 15000000,
+        "duration": "8 Days 7 Nights",
+        "image": "images/beijing.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Malibu Summer Tour",
+        "description": "15 July - 20 July 2026",
+        "price": 30000000,
+        "duration": "5 Days 4 Nights",
+        "image": "images/malibu.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Japan Winter Tour",
+        "description": "2 January - 9 January 2025",
+        "price": 25000000,
+        "duration": "7 Days 6 Nights",
+        "image": "images/japan.jpg"
+    },
+    {
+        "id": 5,
+        "name": "France Art Tour",
+        "description": "23 June - 30 June 2025",
+        "price": 35000000,
+        "duration": "7 Days 6 Nights",
+        "image": "images/paris.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Slovenia Winter Tour",
+        "description": "20 December - 27 December 2025",
+        "price": 35000000,
+        "duration": "7 Days 6 Nights",
+        "image": "images/slovenia.jpg"
+    }
+]
