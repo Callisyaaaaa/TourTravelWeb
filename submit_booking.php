@@ -43,4 +43,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 } else {
     echo "<h2>Permintaan tidak valid.</h2>";
 }
+<<<<<<< Updated upstream
 ?>
+=======
+?>
+>>>>>>> Stashed changes
