@@ -37,5 +37,14 @@ if ($selectedPackage === null) {
                 <li>Email: <?php echo $_SESSION['email']; ?></li>
                 <li>Telepon: <?php echo $_SESSION['phone']; ?></li>
                 <li>Paket Wisata: <?php echo $selectedPackage['name']; ?></li>
+                <li>Jumlah Paket: <?php echo $_SESSION['quantity']; ?></li>
+                <li>Nomor Paspor: <?php echo $_SESSION['passport']; ?></li>
+                <li>Total Pembayaran: Rp<?php echo number_format($_SESSION['totalPayment'], 2); ?></li>
             </ul>
         </div>
+
+        <a href="index.php">Kembali ke Beranda</a>
+    </div>
+</body>
+</html>
+            
