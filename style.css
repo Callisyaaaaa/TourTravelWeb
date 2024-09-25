@@ -1,50 +1,119 @@
-b
 body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
     margin: 0;
     padding: 0;
-    font-family: 'Georgia', serif;
-    background-image: url('images/start1.jpg'); 
-    background-size: cover;
-    background-position: center; 
-    background-attachment: fixed;
-    height: 100vh; 
 }
-.get-started-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; 
-    background-image: url('images/hill.jpg'); 
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat; 
+
+h1 {
     text-align: center;
-}
-
-
-.get-started-container h1 {
-    font-family: 'Georgia', serif;
-    font-size: 48px;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #fff; 
-    margin-bottom: 20px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
-}
-
-.start-button {
-    padding: 15px 30px;
-    font-size: 20px;
-    color: #fff;
     background-color: #506551;
-    text-decoration: none;
-    border-radius: 8px;
-    transition: background-color 0.3s;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin-top: 0;
+    font-family: 'Georgia', serif; 
 }
 
-.start-button:hover {
-    background-color: #45a049;
+
+.header-top {
+    color: #fff; 
+    font-family: 'Georgia', serif; 
+    font-size: 50px; 
+    text-transform: uppercase; 
+}
+
+.header-bottom {
+    color: #fff;
+    font-family: 'Georgia', serif; 
+    font-size: 20px;
+    font-weight: normal; 
+    text-transform: none; 
+}
+
+
+.container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+li {
+    background-color: #fff;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(33% - 30px); 
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+}
+
+li:hover {
+    transform: translateY(-5px);
+}
+
+h2 {
+    color: #2c3e50;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    color: #555;
+}
+
+a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+a:hover {
+    background-color: #c0392b;
+}
+
+@media (max-width: 768px) {
+    li {
+        width: calc(50% - 30px); 
+    }
+}
+
+@media (max-width: 480px) {
+    li {
+        width: 100%; 
+    }
+}
+
+.tour-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    object-fit: cover; 
+}
+
+li {
+    background-color: #fff;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(33% - 30px); 
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+    overflow: hidden; 
 }
 b
 body {
@@ -121,4 +190,124 @@ body {
 
 .success {
     color: #5cb85c; 
+}
+.confirmation-container {
+    max-width: 600px; 
+    margin: 30px auto; 
+    padding: 20px; 
+    background-color: #fff; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    text-align: center; 
+}
+
+.data-container {
+    margin: 15px 0; 
+    padding: 15px; 
+    background-color: #f9f9f9; 
+    border-radius: 5px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between;
+    align-items: center; 
+    gap: 10px; 
+}
+
+.data-container ul {
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0;
+    display: flex;
+    flex-direction: row; 
+    gap: 20px; 
+}
+
+
+.data-container li {
+    padding: 5px 10px; 
+    background-color: #fff;
+    border-radius: 4px; 
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    text-align: center; 
+    flex-grow: 1; 
+}
+
+.get-started-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    background-image: url('images/hill.jpg'); 
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat; 
+    text-align: center;
+}
+
+
+.get-started-container h1 {
+    font-family: 'Georgia', serif;
+    font-size: 48px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+
+.start-button {
+    padding: 15px 30px;
+    font-size: 20px;
+    color: #fff;
+    background-color: #506551;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.start-button:hover {
+    background-color: #45a049;
+}
+
+h4 {
+    color: #fff; 
+    margin-bottom: 10px; 
+    text-align: center;
+
+footer {
+    background-color: #506551;
+    color: #fff;
+    font-family: 'Georgia', serif;
+    text-align: center; 
+    padding: 30px 0; 
+    position: relative; 
+    bottom: 0;
+    width: 100%; 
+}
+
+.footer-content {
+    display: flex; 
+    justify-content: center; 
+    gap: 40px;
+}
+
+.footer-content a {
+    color: #ffcc00; 
+    text-decoration: none; 
+}
+
+.footer-content a:hover {
+    text-decoration: underline; 
+}
+
+.footer-content p {
+    margin: 5px 0;
+    color: #fff; 
+}
+
+.footer-content i {
+    margin-right: 8px; 
+    color: #ffffff; 
 }
