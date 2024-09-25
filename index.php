@@ -33,7 +33,19 @@ if ($packages === null) {
         <span class="header-top"> LIBRE </span><br>
         <span class="header-bottom">Travel & Tour</span>
     </h1>
-
+    <ul>
+        <?php foreach ($packages as $package): ?>
+            <li>
+                <img src="<?php echo $package['image']; ?>" alt="<?php echo $package['name']; ?>" class="tour-image">
+                <h2><?php echo $package['name']; ?></h2>
+                <p><?php echo $package['description']; ?></p>
+                <p>Price: Rp<?php echo number_format($package['price'], 2); ?></p>
+                <p>Duration: <?php echo $package['duration']; ?></p>
+                <a href="booking.php?id=<?php echo $package['id']; ?>">Pesan Sekarang</a>
+            </li>
+        <?php endforeach; ?>
+        </ul>
+    </div>
     <footer>
     <footer>
     <div class="footer-content">
@@ -41,4 +53,7 @@ if ($packages === null) {
         <p><i class="fas fa-envelope"></i>info@libretravel.com</p>
         <p><i class="fab fa-instagram"></i>@libretouring </p>
     </div>
-</footer>
+    </footer>
+
+</body>
+</html>
