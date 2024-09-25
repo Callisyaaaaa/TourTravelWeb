@@ -1,3 +1,22 @@
+<?php 
+$packages = json_decode(file_get_contents('packages.json'), true);
+
+$selectedPackage = null;
+if (isset($_GET['id'])) {
+    foreach ($packages as $package) {
+        if ($package['id'] == $_GET['id']) {
+            $selectedPackage = $package;
+            break;
+        }
+    }
+
+    if (!$selectedPackage) {
+        die("Paket tidak ditemukan.");
+    }
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -9,6 +28,13 @@
 <body>
     <div class="booking-container">
         <h2>PEMESANAN PAKET TOUR</h2>
+        <form action="submit_booking.php" method="post">
+            <label for="name">Nama Lengkap:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </form>
     </div>
 </body>
 </html>
