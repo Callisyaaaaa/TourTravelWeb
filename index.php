@@ -32,15 +32,13 @@ if ($packages === null) {
     <h1>
         <span class="header-top"> LIBRE </span><br>
         <span class="header-bottom">Travel & Tour</span>
-</h1>
+    </h1>
 
-<ul>
-        <?php foreach ($packages as $package): ?>
-            <li>
-                <h2><?php echo $package['name']; ?></h2>
-                <p><?php echo $package['description']; ?></p>
-                <p>Price: Rp<?php echo number_format($package['price'], 2); ?></p>
-                <p>Duration: <?php echo $package['duration']; ?></p>
-            </li>
-        <?php endforeach; ?>
-        </ul>
+    <footer>
+    <footer>
+    <div class="footer-content">
+        <p><i class="fas fa-phone"></i>+62 123 456 789</p>
+        <p><i class="fas fa-envelope"></i>info@libretravel.com</p>
+        <p><i class="fab fa-instagram"></i>@libretouring </p>
+    </div>
+</footer>
