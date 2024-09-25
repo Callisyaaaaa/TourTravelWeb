@@ -34,6 +34,12 @@ if (isset($_GET['id'])) {
 
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
+
+            <label for="phone">Nomor Telepon:</label>
+            <input type="number" id="phone" name="phone" required>
+
+            <label for="passport">Nomor Paspor:</label>
+            <input type="text" id="passport" name="passport" required>
         </form>
     </div>
 </body>
