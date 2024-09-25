@@ -40,6 +40,23 @@ if (isset($_GET['id'])) {
 
             <label for="passport">Nomor Paspor:</label>
             <input type="text" id="passport" name="passport" required>
+
+            <label for="package">Paket Wisata:</label>
+
+            <select id="package" name="package" required>
+                <option value="">Pilih Paket Wisata</option>
+                <?php
+                foreach ($packages as $package): ?>
+                    <option value="<?php echo $package['id']; ?>">
+                        <?php echo $package['name']; ?>
+                    </option>
+                <?php endforeach; ?>
+            </select>
+
+            <label for="quantity">Jumlah Paket:</label>
+            <input type="number" id="quantity" name="quantity" min="1" required>
+
+            <button type="submit">Pesan Paket Tour</button>
         </form>
     </div>
 </body>
